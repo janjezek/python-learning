@@ -31,7 +31,7 @@ myVar
 print("\033[31m", "Warning", "\033[0m", "for being a bad, bad person.")
 ```
 
-- [Colour codes](https://gist.github.com/rene-d/9e584a7dd2935d0f461904b9f2950007)
+- [Colour codes](https://gist.github.com/minism/1590432)
 
 ## if
 
@@ -244,3 +244,16 @@ answer = f"You thought Day {i} was {feeling}\n"
 for i in range(1, 31):
     print(f"Day {i: <2} of 30")
 ```
+
+## Lists
+
+Notice we start counting the first item at 0 (instead of 1).
+
+timetable = ["Computer Science", "Math", "English", "Art", "Sport"]
+print(timetable[1])
+
+### Lists and Loops
+
+timetable = ["Computer Science", "Math", "English", "Art", "Watch TV"]
+for lesson in timetable:
+print(lesson)
