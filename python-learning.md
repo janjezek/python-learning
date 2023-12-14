@@ -191,6 +191,8 @@ def my_function(x):
 print(my_function(3))
 ```
 
+The `return` command sends some information back to the part of the code that called it. This means the function call is replaced with whatever was returned.
+
 ## os Library
 
 ```python
