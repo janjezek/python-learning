@@ -96,6 +96,8 @@ round(var, 2) #round number to the defined number of decimals
 
 # while
 
+![While](while.png)
+
 ```python
 counter = 0
 while counter < 10:
@@ -111,7 +113,9 @@ while exit != "yes":
     exit = input("Do you want to exit? ")
 ```
 
-# while True Loop
+# while True
+
+![While True](loop.png)
 
 After `break`, the computer jumps out of the loop to the next unindented line of code.
 
@@ -144,6 +148,8 @@ The previous code continues to loop even after the user has won. Let's fix that 
 
 ## for Loop
 
+![For](for.png)
+
 ```python
 for counter in range(10):
     print(counter)
@@ -171,6 +177,8 @@ print(myNumber)
 I add the lowest number (1) and the highest number (100) that can be picked.
 
 ## Subroutines
+
+![Subroutines](subroutines.png)
 
 ```python
 def my_function():
@@ -247,13 +255,19 @@ for i in range(1, 31):
 
 ## Lists
 
+![List](list.png)
+
 Notice we start counting the first item at 0 (instead of 1).
 
+```python
 timetable = ["Computer Science", "Math", "English", "Art", "Sport"]
 print(timetable[1])
+```
 
 ### Lists and Loops
 
+```python
 timetable = ["Computer Science", "Math", "English", "Art", "Watch TV"]
 for lesson in timetable:
 print(lesson)
+```
