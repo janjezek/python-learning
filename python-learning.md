@@ -271,3 +271,30 @@ timetable = ["Computer Science", "Math", "English", "Art", "Watch TV"]
 for lesson in timetable:
 print(lesson)
 ```
+
+### Append a list
+
+You need to define blank list first:
+
+```python
+myAgenda = []
+```
+
+```python
+myList.append(item)
+```
+
+### Removing items
+
+```python
+myList.remove(item)
+```
+
+### Using the Index
+
+```python
+for index in range(len(listOfEmail)):
+    print(f"{index}: {listOfEmail[index]}")
+```
+
+`len` counts how many items are in a list. In this case, it is starting at 0 and then keeps going until it reaches the end of our data inside our list.
