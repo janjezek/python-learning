@@ -96,7 +96,7 @@ round(var, 2) #round number to the defined number of decimals
 
 # while
 
-![While](while.png)
+![While](images/while.png)
 
 ```python
 counter = 0
@@ -115,7 +115,7 @@ while exit != "yes":
 
 # while True
 
-![While True](loop.png)
+![While True](images/loop.png)
 
 After `break`, the computer jumps out of the loop to the next unindented line of code.
 
@@ -178,7 +178,7 @@ I add the lowest number (1) and the highest number (100) that can be picked.
 
 ## Subroutines
 
-![Subroutines](subroutines.png)
+![Subroutines](images/subroutines.png)
 
 ```python
 def my_function():
@@ -246,7 +246,7 @@ answer = f"You thought Day {i} was {feeling}\n"
 
 ## Alignment
 
-![Alignment](alignment.png)
+![Alignment](images/alignment.png)
 
 ```python
 for i in range(1, 31):
@@ -255,7 +255,7 @@ for i in range(1, 31):
 
 ## Lists
 
-![List](list.png)
+![List](images/list.png)
 
 Notice we start counting the first item at 0 (instead of 1).
 
@@ -298,3 +298,49 @@ for index in range(len(listOfEmail)):
 ```
 
 `len` counts how many items are in a list. In this case, it is starting at 0 and then keeps going until it reaches the end of our data inside our list.
+
+## String Manipulation
+
+- `.lower` = all letters are lower case
+- `.upper` = all letters are upper case
+- `.title` = capital letter for the first letter of every word
+- `.capitalize` = capital letter for the first letter of only the first word
+- `.strip()` removes any spaces on either side of the word.
+
+```python
+name.lower().strip()
+addItem = input("Item > ").capitalize().strip()
+```
+
+## String Slicing
+
+```python
+myString = "Hello there my friend."
+print(myString[0])
+print(myString[6:11])
+print(myString[:11])
+print(myString[12:])
+```
+
+![Split](images/split.png)
+
+```python
+myString = "Hello there my friend."
+
+print(myString[0:6:2])
+# This code outputs 'Hlo' (every second character from 'Hello').
+
+print(myString[::3])
+# This code outputs 'Hltrmfe!' (every third character from the whole string).
+
+print(myString[::-1])
+#This code reverses the string, outputting '.dneirf ym ereht olleH'
+```
+
+### split()
+
+```python
+myString = "Hello there my friend."
+print(myString.split())
+#This code outputs ['Hello', 'there', 'my', 'friend.']
+```
